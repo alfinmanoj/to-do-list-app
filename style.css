@@ -1,0 +1,133 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #007acc;
+  }
+  
+  header p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  /* Task Creator Form */
+  #task-creator {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  #new-task-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  #new-task-form input[type="text"],
+  #new-task-form input[type="date"],
+  #new-task-form select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1 1 200px;
+  }
+  
+  #new-task-form button {
+    padding: 0.6rem 1rem;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1 1 150px;
+    min-width: 120px;
+  }
+  
+  #new-task-form button:hover {
+    background-color: #005f99;
+  }
+  
+  /* Task Stats */
+  #task-stats {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #task-progress {
+    width: 100%;
+    height: 20px;
+    margin: 1rem 0;
+  }
+  
+  /* Task List */
+  #task-list {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  #task-list h2 {
+    margin-bottom: 1rem;
+  }
+  
+  #tasks {
+    list-style: none;
+  }
+  
+  #tasks li {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #new-task-form {
+      flex-direction: column;
+    }
+  
+    #new-task-form button {
+      width: 100%;
+    }
+  
+    #tasks li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+  
