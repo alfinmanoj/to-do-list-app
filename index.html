@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>📋 My To-Do List</h1>
+        <p>Stay organized. Stay productive.</p>
+      </header>
+    
+      <section id="task-creator">
+        <form id="new-task-form">
+          <input type="text" id="task-title" placeholder="What needs to be done?" required />
+          <select id="task-category">
+            <option value="work">🧠 Work</option>
+            <option value="personal">🏡 Personal</option>
+            <option value="shopping">🛒 Shopping</option>
+          </select>
+          <input type="date" id="task-due-date" />
+          <select id="task-priority">
+            <option value="low">🟢 Low</option>
+            <option value="medium">🟡 Medium</option>
+            <option value="high">🔴 High</option>
+          </select>
+          <button type="submit">Add Task ➕</button>
+        </form>
+      </section>
+    
+      <section id="task-stats">
+        <h2>Progress</h2>
+        <progress id="task-progress" value="0" max="100"></progress>
+        <p><span id="completed-count">0</span> / <span id="total-count">0</span> tasks completed</p>
+      </section>
+    
+      <section id="task-list">
+        <h2>🗂️ Your Tasks</h2>
+        <ul id="tasks">
+          <!-- Tasks will be dynamically added here -->
+        </ul>
+      </section>
+    
+      <footer>
+        <p>Made with ❤️ to boost your productivity</p>
+      </footer>
+</body>
+</html>
